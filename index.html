@@ -5,24 +5,57 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>html page</title>
+    <title>Tic Tac Toe</title>
   </head>
   <body>
     <div class="container">
-      <h1>Header</h1>
-
-      <form id="id1">
-        <div class="form-group">
-          <label for="label">Form label</label>
-          <input id="id2" type="text">
+      <h1>Tic Tac Totally Awesome</h1>
+      <div class="row">
+        <div class="col-md-9">
+          
+          <table>
+            <tr id="row1">
+              <td class="square" data-number="0">
+              </td>
+              <td class="square v" data-number="1">
+              </td>
+              <td class="square" data-number="2">
+              </td>
+            </tr>
+            <tr id="row2">
+              <td class="square h" data-number="3">
+              </td>
+              <td class="square v h" data-number="4">
+              </td>
+              <td class="square h" data-number="5">
+              </td>
+            </tr>
+            <tr id="row3">
+              <td class="square" data-number="6">
+              </td>
+              <td class="square v" data-number="7">
+              </td>
+              <td class="square" data-number="8">
+              </td>
+            </tr>
+          </table>
         </div>
-
-        <button type="submit" class="btn">Enter</button>
-      </form>
+        <div class="col-md-3 sidebar">
+          <h3>Enter Player Information and click "Play!"</h3>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label for="nameInputX">Player X</label>
+              <input type="text" class="form-control" id="nameInputX" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="nameInputO">Player O</label>
+              <input type="text" class="form-control" id="nameInputO" placeholder="Enter Name">
+            </div>
       
-       <div id="id3">
-         <p><span class="someClass"></span></p>
-       </div> 
+           <button type="submit" class="btn btn-success">Play!</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
